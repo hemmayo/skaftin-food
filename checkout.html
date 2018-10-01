@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skaftin - Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="main-font">
+    <div class="main-font uk-container uk-container-large">
+        <!-- Navbar -->
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <div class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center-left">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a>TACO</a></li>
+                                <li><a>QUESADILLA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="./" class="main-font b uk-navbar-item uk-logo">Skaftin</a>
+                    <div class="uk-navbar-center-right">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a>SALADS</a></li>
+                                <li><a>DRINKS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-position-medium uk-position-right">
+                <a href="cart.html" class="uk-text-small" style="color: #9d9d9d">
+                    <span uk-icon="icon: cart"></span> Cart
+                </a>
+            </div>
+        </div>
+
+        <!-- Checkout -->
+        <h3>Checkout</h3>
+        <h4>Step 1: Checkout options</h4>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">New Customer</h3>
+                    <p class="help-block">Checkout Options:</p>
+
+                    <div class="form-group">
+                        <div class="radio">
+                            <label for="register">
+                                <input type="radio" name="account" value="register" id="register" checked="checked">
+                                Register Account </label>
+                        </div>
+
+                        <div class="radio">
+                            <label for="guest">
+                                <input type="radio" name="account" value="guest" id="guest">
+                                Guest Checkout </label>
+                        </div>
+                    </div>
+
+                    <p class="text-info">By creating an account you will be able to shop faster, be up to date
+                        on an order's status, and keep track of the orders you have previously made.</p>
+                    <input type="button" value="Continue" id="button-account" class="uk-button uk-button-default">
+                </div>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Returning Customer</h3>
+
+                    <form class="uk-form-stacked">
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Email Address</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="me@example.com">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Password</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="password" placeholder="********">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-button uk-button-primary" type="submit" value="Sign in">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <h4>Step 2: Your personal details</h4>
+        <form class="uk-form-stacked">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Your personal details </h3>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">First name</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Last name</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Email address</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Phone number</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <input class="uk-button uk-button-primary" type="submit" value="Continue">
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Delivery address</h3>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Address 1</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Address 2</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">City</label>
+                            <div class="uk-form-controls">
+                                <input class="uk-input" id="form-stacked-text" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-stacked-text">Country</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select">
+                                    <option>South Africa</option>
+                                    <option>Nigeria</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+
+
+
+        <!-- Footer -->
+        <div class="uk-visible@s uk-margin-top uk-margin-bottom">
+            <div uk-grid="" class="uk-child-width-auto@m uk-flex-middle uk-grid">
+                <div class="uk-first-column">
+                    <div class="uk-text-left@m uk-text-center"><a href="./" class="uk-logo">
+                            Skaftin
+                        </a></div>
+                </div>
+                <div class="uk-margin-auto">
+                    <ul uk-margin="" class="uk-subnav uk-flex-center">
+                        <li class="uk-first-column"><a href="#">About</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="uk-text-right@m uk-text-center">
+                        <div uk-grid="" class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                            <div class="uk-first-column">
+                                <a href="#" uk-icon="icon: github" class="uk-icon-link uk-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

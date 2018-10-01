@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tasty Fried Chicken - Skaftin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+</head>
+
+<body class="main-font">
+    <div class="main-font uk-container uk-container-large">
+        <!-- Navbar -->
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <div class="uk-navbar-container" uk-navbar>
+                <div class="uk-navbar-center">
+                    <div class="uk-navbar-center-left">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a>TACO</a></li>
+                                <li><a>QUESADILLA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="./" class="main-font b uk-navbar-item uk-logo">Skaftin</a>
+                    <div class="uk-navbar-center-right">
+                        <div>
+                            <ul class="uk-navbar-nav">
+                                <li><a>SALADS</a></li>
+                                <li><a>DRINKS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-position-medium uk-position-right">
+                <a href="cart.html" class="uk-text-small" style="color: #9d9d9d">
+                    <span uk-icon="icon: cart"></span> Cart
+                </a>
+            </div>
+        </div>
+        <!-- Product Information  -->
+
+        <h1 class="uk-heading-bullet">Tasty Fried Chicken</h1>
+
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slideshow>
+
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5894d2b9b41c5ea885946bf9e58742d8&auto=format&fit=crop&w=747&q=80"
+                                alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e83c3040e4103098e34c1ef7b4ce5406&auto=format&fit=crop&w=667&q=80"
+                                alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1441986060468-324610e6e6a8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=60efa50c2a58a622181da4b0cc4aa738&auto=format&fit=crop&w=750&q=80"
+                                alt="" uk-cover>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                        uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                        uk-slideshow-item="next"></a>
+
+                </div>
+            </div>
+            <div>
+                <span class="uk-badge">15% Discount Available</span>
+
+                <h3>Price: &#8358;3,000</h3>
+                <strong>Brand:</strong> <a href="#">Meat</a>
+                <br>
+
+                <strong>Product Code:</strong> Burito <br>
+
+
+                <strong>Availability:</strong> 998
+                <br>
+                <button class="uk-margin-top uk-button uk-button-default"><span uk-icon="icon: cart"></span> Add to
+                    cart</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="uk-margin-medium-top uk-margin-bottom">
+            <div uk-grid="" class="uk-child-width-auto@m uk-flex-middle uk-grid">
+                <div class="uk-first-column">
+                    <div class="uk-text-left@m uk-text-center"><a href="./" class="uk-logo">
+                            Skaftin
+                        </a></div>
+                </div>
+                <div class="uk-margin-auto">
+                    <ul uk-margin="" class="uk-subnav uk-flex-center">
+                        <li class="uk-first-column"><a href="#">About</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="uk-text-right@m uk-text-center">
+                        <div uk-grid="" class="uk-child-width-auto uk-grid-small uk-flex-center uk-grid">
+                            <div class="uk-first-column">
+                                <a href="#" uk-icon="icon: github" class="uk-icon-link uk-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
