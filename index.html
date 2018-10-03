@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Skaftin</title>
+    <title>Keny's Kitchen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
@@ -24,12 +24,12 @@
                     <div class="uk-navbar-center-left">
                         <div>
                             <ul class="uk-navbar-nav">
-                                <li><a>TACO</a></li>
+                                <li><a href="#meals-section">TACO</a></li>
                                 <li><a>QUESADILLA</a></li>
                             </ul>
                         </div>
                     </div>
-                    <a href="./" class="main-font b uk-navbar-item uk-logo">Skaftin</a>
+                    <a href="./" class="main-font b uk-navbar-item uk-logo">Keny's Kitchen</a>
                     <div class="uk-navbar-center-right">
                         <div>
                             <ul class="uk-navbar-nav">
@@ -41,9 +41,20 @@
                 </div>
             </div>
             <div class="uk-position-medium uk-position-right">
-                <a href="cart.html" class="uk-text-small" style="color: #9d9d9d">
+                <button type="button" href="cart.html" class="uk-button uk-button-text uk-text-small" style="color: #9d9d9d">
                     <span uk-icon="icon: cart"></span> Cart
-                </a>
+                </button>
+                <div uk-drop>
+                    <div class="uk-card uk-card-body uk-card-default">
+                        <p class="main-font b">Your Order Items</p>
+                        <ul class="uk-list uk-list-striped">
+                            <li>Tasty Fried Chicken<br><small>2 pcs - &#8358;2,500</small></li>
+                            <li>Coca Cola<br><small>3 pcs - &#8358;500</small></li>
+                        </ul>
+                        <a href="checkout.html" class="uk-button uk-button-primary">Checkout</a>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -83,14 +94,200 @@
         </div>
 
         <!-- Tabs -->
-
+        <!-- 
         <ul uk-tab>
             <li class="uk-active"><a href="#">Featured Foods</a></li>
             <li><a href="#">Top Selling</a></li>
             <li><a href="#">Latest</a></li>
         </ul>
-
+        -->
         <!-- Food list -->
+
+        <!-- Meals & combos -->
+        <h2 id="meals-section" class="uk-heading-line"><span>Meals & Combos</span></h2>
+        <div class="uk-child-width-1-4@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5894d2b9b41c5ea885946bf9e58742d8&auto=format&fit=crop&w=747&q=80"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Chicken and Chips</h3>
+                        <p class="">₦ 13,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-0.3.5&s=477869205c07710ab680c5d0002712e8&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Burger <small>(Modal here)</small></h3>
+                        <p class="">₦ 4,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <!-- <a class="uk-button uk-button-default " href="#">Add</a> -->
+
+                        <!-- Here's the modal -->
+                        <a class="uk-button uk-button-default" href="#modal-burger-01" uk-toggle>Add</a>
+
+                        <div id="modal-burger-01" class="uk-flex-top" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-width-2-3 uk-margin-auto-vertical">
+
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                                <div class="uk-child-width-1-2@m" uk-grid>
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-0.3.5&s=477869205c07710ab680c5d0002712e8&auto=format&fit=crop&w=500&q=60"
+                                            alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="uk-margin-small-bottom">Crunchy Wings Meal</h3>
+                                        <h5 class="uk-margin-remove-top">&#8358;2,500</h5>
+                                        <form class="uk-form-stacked">
+                                            <div class="uk-margin">
+                                                <label class="uk-form-label" for="form-stacked-text">CR Side Dish *</label>
+                                                <div class="uk-form-controls">
+                                                    <select class="uk-select" uk-select>
+                                                        <option value="">Choose an Option...</option>
+                                                        <option value="143" price="0">Chips</option>
+                                                        <option value="142" price="0">Spicy Rice</option>
+                                                        <option value="141" price="0">Fried Rice</option>
+                                                        <option value="140" price="0">Rice &amp; Beans</option>
+                                                        <option value="195" price="0">Amma-Jamma Spaghetti</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="uk-margin">
+                                                <label class="uk-form-label" for="form-stacked-text">CR Drinks *</label>
+                                                <div class="uk-form-controls">
+                                                    <select class="uk-select" uk-select>
+                                                        <option value="">Choose an Option...</option>
+                                                        <option value="143" price="0">Chips</option>
+                                                        <option value="142" price="0">Spicy Rice</option>
+                                                        <option value="141" price="0">Fried Rice</option>
+                                                        <option value="140" price="0">Rice &amp; Beans</option>
+                                                        <option value="195" price="0">Amma-Jamma Spaghetti</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="uk-margin">
+                                                <select class="uk-width-1-4 uk-select" uk-select>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <input class="uk-width-2-5 uk-button uk-button-primary" type="submit"
+                                                    value="Add to Cart">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae10582705f9402e297585fdb33b6348&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Shawarma</h3>
+                        <p class="">₦ 2,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41d4e761f4b677daa6d016f4d9d6b743&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Pizza</h3>
+                        <p class="">₦ 6,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sides and sauces -->
+
+        <h2 id="sides-section" class="uk-heading-line"><span>Sides & Sauces</span></h2>
+        <div class="uk-child-width-1-4@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5894d2b9b41c5ea885946bf9e58742d8&auto=format&fit=crop&w=747&q=80"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Chicken and Chips</h3>
+                        <p class="">₦ 13,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-0.3.5&s=477869205c07710ab680c5d0002712e8&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Burger</h3>
+                        <p class="">₦ 4,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae10582705f9402e297585fdb33b6348&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Shawarma</h3>
+                        <p class="">₦ 2,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41d4e761f4b677daa6d016f4d9d6b743&auto=format&fit=crop&w=500&q=60"
+                            alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Pizza</h3>
+                        <p class="">₦ 6,999.99 per kg</p>
+                        <a class="uk-button uk-button-default" href="product.html">View</a>
+                        <a class="uk-button uk-button-default " href="#">Add</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Drinks -->
+        <h2 id="meals-section" class="uk-heading-line"><span>Drinks</span></h2>
         <div class="uk-child-width-1-4@m" uk-grid>
             <div>
                 <div class="uk-card uk-card-default">
@@ -159,7 +356,7 @@
             </div>
             <div>
                 <div class="uk-card-body">
-                    <h3 class="uk-card-title">Skaftin Family Meals</h3>
+                    <h3 class="uk-card-title">Keny's Kitchen Family Meals</h3>
                     <p>Enjoy some lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus itaque est optio, dolor
@@ -248,12 +445,12 @@
             <div uk-grid="" class="uk-child-width-auto@m uk-flex-middle uk-grid">
                 <div class="uk-first-column">
                     <div class="uk-text-left@m uk-text-center"><a href="./" class="uk-logo">
-                            Skaftin
+                            Keny's Kitchen
                         </a></div>
                 </div>
                 <div class="uk-margin-auto">
                     <ul uk-margin="" class="uk-subnav uk-flex-center">
-                        <li class="uk-first-column"><a href="#">About</a></li>
+                        <li class="uk-first-column"><a href="about-us.html">About</a></li>
                         <li><a href="#">Delivery Information</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>

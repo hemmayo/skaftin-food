@@ -1,2 +1,2 @@
-# skaftin-food
-Skaftin restaurant website and food delivery
+# Keny's Kitchen-food
+Keny's Kitchen restaurant website and food delivery

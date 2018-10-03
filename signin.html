@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Skaftin - Sign in</title>
+    <title>Keny's Kitchen - Sign in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
@@ -29,7 +29,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="./" class="main-font b uk-navbar-item uk-logo">Skaftin</a>
+                    <a href="./" class="main-font b uk-navbar-item uk-logo">Keny's Kitchen</a>
                     <div class="uk-navbar-center-right">
                         <div>
                             <ul class="uk-navbar-nav">
@@ -41,9 +41,20 @@
                 </div>
             </div>
             <div class="uk-position-medium uk-position-right">
-                <a href="cart.html" class="uk-text-small" style="color: #9d9d9d">
+                <button type="button" href="cart.html" class="uk-button uk-button-text uk-text-small" style="color: #9d9d9d">
                     <span uk-icon="icon: cart"></span> Cart
-                </a>
+                </button>
+                <div uk-drop>
+                    <div class="uk-card uk-card-body uk-card-default">
+                        <p class="main-font b">Your Order Items</p>
+                        <ul class="uk-list uk-list-striped">
+                            <li>Tasty Fried Chicken<br><small>2 pcs - &#8358;2,500</small></li>
+                            <li>Coca Cola<br><small>3 pcs - &#8358;500</small></li>
+                        </ul>
+                        <a href="checkout.html" class="uk-button uk-button-primary">Checkout</a>
+                    </div>
+
+                </div>
             </div>
         </div>
         <!-- Sign in -->
@@ -67,7 +78,7 @@
                 <div class="uk-margin">
                     <input class="uk-width-1-1 uk-button uk-button-primary" type="submit" value="Sign in">
                 </div>
-                
+
             </form>
         </div>
 
@@ -77,12 +88,12 @@
             <div uk-grid="" class="uk-child-width-auto@m uk-flex-middle uk-grid">
                 <div class="uk-first-column">
                     <div class="uk-text-left@m uk-text-center"><a href="./" class="uk-logo">
-                            Skaftin
+                            Keny's Kitchen
                         </a></div>
                 </div>
                 <div class="uk-margin-auto">
                     <ul uk-margin="" class="uk-subnav uk-flex-center">
-                        <li class="uk-first-column"><a href="#">About</a></li>
+                        <li class="uk-first-column"><a href="about-us.html">About</a></li>
                         <li><a href="#">Delivery Information</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
